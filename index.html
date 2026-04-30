@@ -39,7 +39,7 @@
       const texto = document.getElementById('entrada').value.trim();
       const apiKey = document.getElementById('api-key').value.trim();
       if (!texto) return;
-      if (!apiKey) { alert('Por favor, pega tu API Key arriba antes de enviar.'); return; }
+      if (!apiKey) { alert('Por favor, pegue su API Key arriba antes de enviar.'); return; }
       mostrarMensaje('Tú', texto, 'usuario');
       document.getElementById('entrada').value = '';
       mostrarMensaje('Bot', '...', 'bot');
@@ -65,7 +65,7 @@
               { role: "system", content: personalidad },
               { role: "user", content: mensaje }
             ],
-            max_tokens: 200
+            max_tokens: 20000
           })
         });
         const datos = await respuesta.json();
