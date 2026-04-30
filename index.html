@@ -22,18 +22,18 @@
   <h2>🤖 Mi asistente IA - by Javier</h2>
 
   <div id="key-zone">
-    🔑 <b>Pega aquí tu API Key de Groq</b> (no se guarda ni se sube a ningún sitio):
+    🔑 <b>Pegue aquí su API Key de Groq</b> (no se guarda ni se sube a ningún sitio):
     <input type="password" id="api-key" placeholder="gsk_..." />
   </div>
 
   <div id="chat"></div>
   <div class="controles">
-    <input id="entrada" placeholder="Escribe tu pregunta aquí..." />
+    <input id="entrada" placeholder="Escriba su pregunta aquí" />
     <button onclick="enviar()">Enviar</button>
   </div>
 
   <script>
-    const personalidad = "Eres un asistente de transporte de mercancías internacional. Respondes en español, de forma breve.";
+    const personalidad = "Eres un asistente de música especializado en el rock. Respondes en español, de forma breve.";
 
     async function enviar() {
       const texto = document.getElementById('entrada').value.trim();
